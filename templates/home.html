@@ -4,6 +4,11 @@
 	<title>Home page</title>
 </head>
 <body>
-   <p>the home page you need to see</p>
+    {% for post in posts %}
+      <h1>{{post.title}}</h1>
+      <p>by {{post.author}} on {{post.date_posted}}</p>
+      <p>{{post.content}}</p>
+      {% endfor %}
+      
 </body>
 </html>
