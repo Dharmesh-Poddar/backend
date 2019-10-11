@@ -27,4 +27,4 @@ def home():
 
 @app.route('/about')
 def about():
-    return "<h1>know about me</h1>"
+    return render_template('about.html',title='About',posts=posts)
