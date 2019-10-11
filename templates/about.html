@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	{%if title%}
-	<title>Flaskblog -- {{title}}</title>
-	{% else %}
-	<title>About page</title>
-     {%endif %}
-</head>
-<body>
+{%extends "layout.html"%}
+{%block content%}
     {% for post in posts %}
-      <h1>{{post.title}}</h1>
-      <p>by {{post.author}} on {{post.date_posted}}</p>
-      <p>{{post.content}}</p>
-      {% endfor %}
       
-</body>
-</html>
+      <p>kya hi jan na baki rh gya</p>
+      {% endfor %}
+{%endblock content%}
