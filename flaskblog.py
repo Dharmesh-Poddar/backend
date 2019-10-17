@@ -3,6 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from forms import LoginForm,RegistrationForm
 app = Flask(__name__)
 app.config['SECRET_KEY']='sdfasf33ddfdsf34343'
+app.config['SQLAlchemy_DATABASE_URI']='sqlite:///site.db'
+db= SQLAlchemy(app)
 posts= [
 
 		 {
